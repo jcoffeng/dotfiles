@@ -504,3 +504,303 @@ exit
 uname -a
 #1626102636
 exit
+#1626101528
+mkdir dotfiles/ranger
+#1626101531
+mkdir dotfiles/rofi
+#1626101659
+cd dotfiles
+#1626101722
+mkdir -p gtk-3.0/.config/gtk-3.0/
+#1626101742
+mkdir -p polybar/.config/polybar/
+#1626101758
+mkdir -p ranger/.config/ranger
+#1626101767
+mkdir -p rofi/.config/rofi
+#1626101802
+mv -v ~/.config/gtk-3.0/settings.ini gtk-3.0/.config/gtk-3.0/settings.ini
+#1626101813
+stow -v gtk-3.0
+#1626101845
+mv -v ~/.config/polybar/config polybar/.config/polybar/config
+#1626101853
+stow -v polybar
+#1626101895
+mv -v ~/.config/rofi/config.rasi rofi/.config/rofi/config.rasi
+#1626101961
+mkdir -p dconf/.config/dconf
+#1626101986
+mv -v ~/.config/dconf/user dconf/.config/dconf/
+#1626102000
+stow -v dconf
+#1626102016
+cd .config/
+#1626100543
+startx
+#1626100543
+startx
+#1626102108
+cd .config/rofi
+#1626102127
+mv -v ~/.config/rofi/config.rasi rofi/.config/rofi/config.rasi
+#1626102204
+stow -v rofi
+#1626102530
+git init
+#1626102672
+git commit -m "Initial configuration i3wm hp-15ba027nd Gentoo Linux 5.10.27 stable"
+#1626102685
+git config --global user.email "jonathan@coffeng.eu"
+#1626102699
+git config --global user.name "Jonathan Coffeng"
+#1626102710
+git remote set
+#1626102758
+git remote add origin git@github.com:jcoffeng/dotfiles.git
+#1626102779
+pbcopy < .ssh/id_rsa.pub 
+#1626102808
+cd dotfiles/
+#1626102828
+git commit -m "History"
+#1626102879
+git history
+#1626102883
+git --help
+#1626102955
+git commit --amend -m "Initial configuration i3wm hp-15ba027nd Gentoo Linux 5.10.27 stable"
+#1626102961
+git show
+#1626102989
+branch
+#1626103016
+git -m master main
+#1626103025
+git branch -m master main
+#1626103028
+git branch
+#1626103063
+git fetch
+#1626103098
+git push --set-upstream origin main
+#1626103146
+git branch --set-upstream-to=origin/main main
+#1626103155
+git branch -v
+#1626103167
+git pull
+#1626103210
+git pull --no-rebase
+#1626103270
+git remote -v
+#1626103292
+git pull origin main --allow-unrelated-histories
+#1626103328
+tree -a
+#1626103379
+vi gtk-3.0/config
+#1626103389
+vi gtk-3.0/.config/gtk-3.0/config
+#1626103409
+cd gtk-3.0/.config/gtk-3.0/
+#1626103412
+ls -la
+#1626103434
+vi settings.ini 
+#1626103485
+cd ..
+#1626103488
+git stats
+#1626103490
+git status
+#1626103492
+git add .
+#1626103517
+git commit -m "Disabled cursor theme so default is used"
+#1626103519
+git push
+#1626103529
+exit
+#1626103942
+echo $HISTSIZE
+#1626103947
+echo $HISTCONTROL
+#1626103984
+exit
+#1626102204
+stow -v rofi
+#1626103542
+startx
+#1626104003
+exit
+#1626100455
+su
+#1626542680
+df -Th
+#1626542697
+su
+#1626543057
+exit
+#1626543066
+df -Th
+#1626543136
+cd boot
+#1626543138
+cd /boot
+#1626543139
+ls -la
+#1626543175
+su
+#1626540822
+wget https://www.eicar.org/download/eicar.com -o ~/eicar.com
+#1626540840
+clamscan eicar.com
+#1626540901
+cat eicar.com
+#1626542239
+ls -la
+#1626542271
+clamscan eicar.com.1
+#1626542650
+uname -a
+#1626542657
+startx
+#1626543703
+su
+#1626544242
+cat Fish_readme.gentoo.txt 
+#1626544248
+fish
+#1626544351
+exit
+#1626543506
+startx
+#1626544365
+sudo shutdown -s now
+#1626544376
+exit
+#1626544242
+cat Fish_readme.gentoo.txt 
+#1626544248
+fish
+#1626543506
+startx
+#1626544365
+sudo shutdown -s now
+#1626629266
+vi /etc/fonts/local.conf
+#1626629496
+unzip NotoColorEmoji-unhinted.zip 
+#1626629545
+mkdir -p dotfiles/emoji/.fonts
+#1626629551
+cd Downloads/
+#1626629572
+mv NotoColorEmoji.ttf ../dotfiles/emoji/.fonts/
+#1626629583
+mv LICENSE_OFL.txt ../dotfiles/emoji/.fonts/
+#1626629598
+mv README ../dotfiles/emoji/.fonts/
+#1626629603
+ls -lah
+#1626629622
+mkdir .fonts
+#1626629627
+cd dotfiles
+#1626629630
+stow -v emoji
+#1626629664
+fc-cache -f -v
+#1626629843
+cd ..
+#1626629846
+cd .fonts/
+#1626629848
+ls -la
+#1626629864
+exit
+#1626628496
+fish -v
+#1626628527
+eselect sh
+#1626628537
+su
+#1626629867
+exit
+#1626544376
+exit
+#1626623555
+clear
+#1626623558
+df -Th
+#1626629885
+startx
+#1626630037
+sudo shutdown -h now
+#1626630047
+su
+#1626708733
+su
+#1626708802
+exit
+#1626704573
+su
+#1627145282
+vi
+#1627146601
+vimtutor
+#1627146739
+nano example
+#1627149121
+ exit
+#1627141970
+startx
+#1627149133
+exit
+#1626708733
+su
+#1626704573
+su
+#1627145282
+vi
+#1627146601
+vimtutor
+#1627146739
+nano example
+#1627149121
+ exit
+#1627141970
+startx
+#1627234366
+touch Program.java
+#1627234369
+vim Program.java 
+#1627234433
+vim -version
+#1627234576
+vi .viminfo 
+#1627234594
+ls -la
+#1627234981
+cd dotfiles/
+#1627234986
+mkdir vim
+#1627234994
+vi .vimrc
+#1627235278
+..
+#1627235280
+cd ..
+#1627235284
+stow -v vim
+#1627235287
+cd .
+#1627235334
+cd vim
+#1627235462
+nano .vimrc 
+#1627235537
+vi README.md 
+#1627235597
+exit
