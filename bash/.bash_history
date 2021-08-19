@@ -804,3 +804,85 @@ nano .vimrc
 vi README.md 
 #1627235597
 exit
+#1627149121
+ exit
+#1627235680
+mkdir -p dotfiles/portage/etc/portage/
+#1627235699
+cp /etc/portage/make.conf dotfiles/portage/etc/portage/
+#1627235709
+vi /etc/portage/make.conf 
+#1627235751
+cd dotfiles
+#1627235757
+git add .
+#1627235778
+git commit -m "Added gentoo config"
+#1627235785
+git push
+#1627235869
+startx
+#1627235934
+exit
+#1627576444
+startx
+#1627576518
+exit
+#1627577981
+startx
+#1627580067
+exit
+#1628263529
+exit
+#1628875783
+startx
+#1628875878
+exit
+#1629129258
+startx
+#1629132603
+exit
+#1627576444
+startx
+#1627577981
+startx
+#1628875783
+startx
+#1629129258
+startx
+#1629308716
+su
+#1629308880
+pbpaste
+#1629308883
+clear
+#1629308894
+pbpaste >> dotfiles/i3/.config/i3/config 
+#1629308897
+vim dotfiles/i3/.config/i3/config 
+#1629309110
+cd /etc/i3
+#1629309112
+ls -la
+#1629309126
+cd ..
+#1629309232
+mkdir -p dotfiles/i3status/.config/i3status/
+#1629309239
+mkdir -p ~/dotfiles/i3status/.config/i3status/
+#1629309279
+pbpaste > ~/dotfiles/i3status/.config/i3status/config
+#1629309302
+cp -v i3status.conf ~/dotfiles/i3status/.config/i3status/config
+#1629309310
+pbpaste >> ~/dotfiles/i3status/.config/i3status/config
+#1629309313
+vim ~/dotfiles/i3status/.config/i3status/config 
+#1629309426
+exit
+#1627235785
+git push
+#1629309432
+startx
+#1629309612
+exit
