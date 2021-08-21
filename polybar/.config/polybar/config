@@ -43,9 +43,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
+;emerge --ask media-fonts/fontsawesome, then fc-list | grep -i awesome
+;eselect fontconfig list
+;also able to place fonts in .local/share/fonts
 font-0 = Input Sans Thin:size=10;-1
 font-1 = Termsynu:size=8:antialias=false;-2
-font-2 = FontAwesome:size=10;0
+font-2 = "Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid"
 
 modules-left = i3
 modules-center = 
@@ -174,7 +177,7 @@ label-song-ellipsis = true
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlo1
 interval = 3.0
 
 format-connected = <label-connected>
@@ -189,7 +192,7 @@ label-disconnected =  
 
 [module/eth]
 type = internal/network
-interface = enp2s0f1
+interface = enp3s0
 interval = 3.0
 
 format-connected-underline = ${colors.foreground}
@@ -326,10 +329,10 @@ menu-0-1-exec = menu-open-2
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = reboot
+menu-1-1-exec = sudo shutdown -h now
 
 menu-2-0 = power off
-menu-2-0-exec = poweroff
+menu-2-0-exec = sudo shutdown -r now
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 

@@ -886,3 +886,427 @@ git push
 startx
 #1629309612
 exit
+#1626540840
+clamscan eicar.com
+#1626540901
+cat eicar.com
+#1626542271
+clamscan eicar.com.1
+#1626542650
+uname -a
+#1626542657
+startx
+#1626543703
+su
+#1626544242
+cat Fish_readme.gentoo.txt 
+#1626544248
+fish
+#1626543506
+startx
+#1626544365
+sudo shutdown -s now
+#1626544242
+cat Fish_readme.gentoo.txt 
+#1626544248
+fish
+#1626543506
+startx
+#1626544365
+sudo shutdown -s now
+#1626629266
+vi /etc/fonts/local.conf
+#1626629496
+unzip NotoColorEmoji-unhinted.zip 
+#1626629545
+mkdir -p dotfiles/emoji/.fonts
+#1626629551
+cd Downloads/
+#1626629572
+mv NotoColorEmoji.ttf ../dotfiles/emoji/.fonts/
+#1626629583
+mv LICENSE_OFL.txt ../dotfiles/emoji/.fonts/
+#1626629598
+mv README ../dotfiles/emoji/.fonts/
+#1626629603
+ls -lah
+#1626629622
+mkdir .fonts
+#1626629630
+stow -v emoji
+#1626629664
+fc-cache -f -v
+#1626629846
+cd .fonts/
+#1626628496
+fish -v
+#1626628527
+eselect sh
+#1626628537
+su
+#1626623555
+clear
+#1626623558
+df -Th
+#1626629885
+startx
+#1626630037
+sudo shutdown -h now
+#1626630047
+su
+#1626708733
+su
+#1626704573
+su
+#1627145282
+vi
+#1627146601
+vimtutor
+#1627146739
+nano example
+#1627149121
+ exit
+#1627141970
+startx
+#1626708733
+su
+#1626704573
+su
+#1627145282
+vi
+#1627146601
+vimtutor
+#1627146739
+nano example
+#1627149121
+ exit
+#1627141970
+startx
+#1627234366
+touch Program.java
+#1627234369
+vim Program.java 
+#1627234433
+vim -version
+#1627234576
+vi .viminfo 
+#1627234986
+mkdir vim
+#1627234994
+vi .vimrc
+#1627235278
+..
+#1627235284
+stow -v vim
+#1627235287
+cd .
+#1627235334
+cd vim
+#1627235462
+nano .vimrc 
+#1627235537
+vi README.md 
+#1627149121
+ exit
+#1627235680
+mkdir -p dotfiles/portage/etc/portage/
+#1627235699
+cp /etc/portage/make.conf dotfiles/portage/etc/portage/
+#1627235709
+vi /etc/portage/make.conf 
+#1627235778
+git commit -m "Added gentoo config"
+#1627235785
+git push
+#1627235869
+startx
+#1627576444
+startx
+#1627577981
+startx
+#1628875783
+startx
+#1629129258
+startx
+#1627576444
+startx
+#1627577981
+startx
+#1628875783
+startx
+#1629129258
+startx
+#1629308716
+su
+#1629308880
+pbpaste
+#1629308883
+clear
+#1629308894
+pbpaste >> dotfiles/i3/.config/i3/config 
+#1629308897
+vim dotfiles/i3/.config/i3/config 
+#1629309110
+cd /etc/i3
+#1629309232
+mkdir -p dotfiles/i3status/.config/i3status/
+#1629309239
+mkdir -p ~/dotfiles/i3status/.config/i3status/
+#1629309279
+pbpaste > ~/dotfiles/i3status/.config/i3status/config
+#1629309302
+cp -v i3status.conf ~/dotfiles/i3status/.config/i3status/config
+#1629309310
+pbpaste >> ~/dotfiles/i3status/.config/i3status/config
+#1629309313
+vim ~/dotfiles/i3status/.config/i3status/config 
+#1627235785
+git push
+#1629309432
+startx
+#1629393614
+cd i3status
+#1629393671
+cd fish
+#1629393695
+tree
+#1629393904
+chmod 755 .config/i3status/config
+#1629393910
+chmod 755 i3status/.config/i3status/config
+#1629394034
+cd ../..
+#1629394072
+stow i3status
+#1629394079
+cd ~/.config/i3status/
+#1629394194
+cd dotfiles/i3status/.config/i3status/
+#1629394209
+cd .config/
+#1629394260
+cd i3
+#1629394294
+cd i3status/
+#1629394303
+cd .config
+#1629394345
+tree -l 4
+#1629394351
+tree --level 4
+#1629394356
+tree -L 4
+#1629394391
+git status
+#1629394397
+git add .
+#1629394408
+git commit -m "Added i3status"
+#1629394417
+stow -v i3status
+#1629394492
+find . -maxdepth 1 -type l -ls
+#1629394502
+find . -type l -ls
+#1629394559
+cd dotfiles/
+#1629394563
+stow -Dv i3status
+#1629394582
+stow -Sv i3status
+#1629394683
+cd .config/i3status
+#1629394818
+stow -D i3status
+#1629394963
+stow -D i3
+#1629394970
+stow -nvt ~ i3
+#1629394986
+stow -v ~ i3
+#1629394991
+stow -v i3
+#1629395030
+cd i3status/.config/i3status/
+#1629395036
+vim config 
+#1629395058
+cat config > config2.txt
+#1629395063
+rm config
+#1629395074
+mv -v config2.txt config
+#1629395091
+stow -nvt ~ i3status
+#1629395169
+mkdir -p i3status2/.config/i3status2/
+#1629395193
+mv i3status/.config/i3status/config i3status2/.config/i3status2/
+#1629395202
+stow -nvt ~ i3status2
+#1629395227
+vim i3status2/.config/i3status2/config 
+#1629395291
+history | grep "make stow"
+#1629395295
+history | grep "stow"
+#1629395645
+ls -la
+#1629395674
+mkdir x11
+#1629395688
+touch x11/.Xresources
+#1629395710
+cp -v ~/.Xauthority x11/
+#1629395718
+cp -v ~/.xdefaults x11/
+#1629395724
+cp -v ~/.Xdefaults x11/
+#1629395731
+cp -v ~/.xinitrc x11/
+#1629395739
+cd dotfiles
+#1629395746
+stow -nvt ~ x11
+#1629395797
+cd ..
+#1629395816
+pbpaste >> .Xresources
+#1629395940
+vim .Xresources 
+#1629395963
+xrdb -merge ~/.Xresources
+#1629396017
+exit
+#1629393368
+startx
+#1629396029
+shutdown -h now
+#1629396033
+su
+#1629395718
+cp -v ~/.xdefaults x11/
+#1629395724
+cp -v ~/.Xdefaults x11/
+#1629395731
+cp -v ~/.xinitrc x11/
+#1629395746
+stow -nvt ~ x11
+#1629395816
+pbpaste >> .Xresources
+#1629395963
+xrdb -merge ~/.Xresources
+#1629393368
+startx
+#1629396029
+shutdown -h now
+#1629396033
+su
+#1629556417
+vim .Xde
+#1629556431
+vim .Xresources 
+#1629556448
+cd dotfiles/
+#1629556454
+mkdir x11
+#1629556469
+rm .Xresources 
+#1629556478
+pbpaste > .Xresources
+#1629556529
+vim .Xdefaults 
+#1629556535
+rm .Xdefaults 
+#1629556543
+vim .xinitrc 
+#1629556631
+ls -la
+#1629556637
+vim .Xauthority 
+#1629556654
+rm .xinitrc 
+#1629556657
+cd dotfiles
+#1629556674
+cd x11
+#1629556678
+rm .Xauthority 
+#1629556680
+cd ..
+#1629556683
+stow -v x11
+#1629556688
+exit
+#1629557521
+ip link
+#1629557561
+exit
+#1629556417
+vim .Xde
+#1629556431
+vim .Xresources 
+#1629556454
+mkdir x11
+#1629556469
+rm .Xresources 
+#1629556478
+pbpaste > .Xresources
+#1629556529
+vim .Xdefaults 
+#1629556535
+rm .Xdefaults 
+#1629556543
+vim .xinitrc 
+#1629556637
+vim .Xauthority 
+#1629556654
+rm .xinitrc 
+#1629556674
+cd x11
+#1629556678
+rm .Xauthority 
+#1629556683
+stow -v x11
+#1629556788
+pbpaste > /etc/portage/package.use/polybar
+#1629557225
+cd dotfiles
+#1629557230
+stow -Dv i3status
+#1629557246
+mkdir -p .config/i3status/
+#1629557252
+cd dotfiles/
+#1629557262
+cd i3status
+#1629557273
+cd .config/
+#1629557278
+cd config
+#1629557286
+cd i3status/
+#1629557288
+ls -la
+#1629557301
+cd ..
+#1629557305
+stow -D i3status
+#1629557443
+pbpaste >> i3status/.config/i3status/config
+#1629557448
+stow -v i3status
+#1629557460
+vim i3/.config/i3/config 
+#1629558094
+vim polybar/.config/polybar/config 
+#1629558462
+which shutdown
+#1629558958
+su
+#1629558974
+exit
+#1629558535
+which shutdown
+#1629558979
+exit
