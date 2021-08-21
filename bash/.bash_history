@@ -1310,3 +1310,29 @@ exit
 which shutdown
 #1629558979
 exit
+#1629558958
+su
+#1629558535
+which shutdown
+#1629558992
+cd ..
+#1629558994
+ls -la
+#1629558997
+cd dotfiles
+#1629559010
+rm -r i3status2
+#1629559014
+git add .
+#1629559015
+git status
+#1629559032
+git commit -m "Added xterm copy paste"
+#1629559034
+git push
+#1629559054
+exit
+#1629559063
+screenfetch
+#1629559075
+exit
