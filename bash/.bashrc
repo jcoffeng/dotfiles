@@ -22,3 +22,4 @@ export HISTCONTROL=erasedups
 export HISTIGNORE="history:ls:pwd:"
 export HISTSIZE=10000
 export HISTTIMEFORMAT='%F, %T'
+export PATH="/home/jonathan/.local/bin:$PATH"
