@@ -10,7 +10,7 @@ xterm*vt100.translations: #override \n\
         Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
         Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
 
-
+xterm*saveLines: 100000
 !fonts&stuff
 xterm*faceSize: 15
 xterm*eightBitInput: false

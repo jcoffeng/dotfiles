@@ -16,6 +16,7 @@ fi
 
 
 # Put your fun stuff here.
+alias ls='exa -al --color=always --group-directories-first'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias i3conf='vim ~/dotfiles/i3/.config/i3/config'
@@ -23,4 +24,4 @@ export HISTCONTROL=erasedups
 export HISTIGNORE="history:ls:pwd:"
 export HISTSIZE=10000
 export HISTTIMEFORMAT='%F, %T'
-export PATH="/home/jonathan/.local/bin:/home/jonathan/repo/v/:$PATH"
+export PATH="/home/jonathan/.cargo/bin:/home/jonathan/.local/bin:/home/jonathan/repo/v/:$PATH"
