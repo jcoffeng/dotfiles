@@ -11,6 +11,9 @@ xterm*vt100.translations: #override \n\
         Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
 
 xterm*saveLines: 100000
+xterm*scrollBar: true
+xterm*rightScrollBar: true
+
 !fonts&stuff
 xterm*faceSize: 15
 xterm*eightBitInput: false
@@ -21,7 +24,7 @@ xterm*foreground: #D2D2D2
 xterm*borderColor: #343434
 
 !Turning off scrollbar
-xterm*scrollBar:  off
+!xterm*scrollBar:  off
 
 !Starting up with a geometry
 xterm*vt100*geometry:   88x24
