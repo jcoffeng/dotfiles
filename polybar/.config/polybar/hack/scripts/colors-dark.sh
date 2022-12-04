@@ -2,7 +2,7 @@
 
 # Color files
 PFILE="$HOME/.config/polybar/hack/colors.ini"
-RFILE="$HOME/.config/polybar/hack/scripts/rofi/colors.rasi"
+RFILE="$HOME/.config/rofi/colors.rasi"
 
 # Change colors
 change_color() {

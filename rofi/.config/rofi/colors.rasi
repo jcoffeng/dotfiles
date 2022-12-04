@@ -27,8 +27,10 @@
     transparent-background: rgba ( 0, 0, 0, 0 % );
     foreground:                  @magenta;
     background:                  rgba ( 0, 0, 0, 90 % );
+    bg:                          @background;
 
     normal-foreground:           @foreground;
+    fg:                          @foreground;
     normal-background:           @transparent-background;
     active-foreground:           @green;
     active-background:           @transparent-background;
@@ -39,12 +41,15 @@
     selected-normal-background:  @base02;
     selected-active-foreground:  @green;
     selected-active-background:  @base02;
+    ac:                          @red;
     selected-urgent-foreground:  @red;
     selected-urgent-background:  @base02;
 
     alternate-normal-foreground: @foreground;
     alternate-normal-background: @transparent-background;
     alternate-active-foreground: @active-foreground;
+    al:                          @base03;
+    se:                          @base02;
     alternate-active-background: @transparent-background;
     alternate-urgent-foreground: @urgent-foreground;
     alternate-urgent-background: @transparent-background;
