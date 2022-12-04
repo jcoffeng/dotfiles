@@ -26,7 +26,8 @@ font pango:monospace 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id compton -b --config $HOME/.config/picom/picom.conf
-exec --no-startup-id feh --bg-scale /home/jonathan/Pictures/968860.jpg
+exec --no-startup-id feh --bg-scale /home/jonathan/Pictures/Wallpapers/IMG_8246.JPG
+#/home/jonathan/Pictures/968860.jpg
 exec --no-startup-id xautolock -locker "/home/jonathan/dotfiles/i3lock/rickandmorty.sh" -time 10 -detectsleep -notify 10
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -55,6 +56,11 @@ bindsym $mod+Return exec xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 3
+# increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 3 
+# decrease screen brightness
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
@@ -185,7 +191,25 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh --hack
+
+# Gaps
+gaps inner 8 
+gaps outer 8
+
+for_window [class="codeblocks"] border pixel 1
+for_window [class="Codeblocks"] border pixel 1
+for_window [title="Volume Control"] floating enable; border none
+for_window [title="Remmina Remote Desktop Client"] floating enable; border none
+for_window [title="Microsoft Teams Notification"] floating enable; border none
+# with titlebar:
+for_window [class="^.*"] border normal 1
+# without titelbar:
+for_window [class="^.*Chromium"] border pixel 1
+#Firefox no titlebar
+for_window [title="^.*Mozilla Firefox"] border pixel 1
+for_window [title="- IntelliJ IDEA"] border pixel 0
+for_window [title="^.*CopyQ"] floating enable; border none
 
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
@@ -200,7 +224,7 @@ client.background       #F8F8F2
 # finds out, if available)
 #bar {
 #    status_command i3status
-#    colors {
+#    COLORS {
 #    background #282A36
 #    statusline #F8F8F2
 #    separator  #44475A

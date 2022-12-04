@@ -16,6 +16,8 @@ fi
 
 
 # Put your fun stuff here.
+[ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" >/dev/null
+
 alias i3conf='vim ~/dotfiles/i3/.config/i3/config'
 alias ls='exa -al --color=always --group-directories-first'
 alias pbcopy='xsel --clipboard --input'

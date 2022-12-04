@@ -28,7 +28,7 @@ window {
 	border:							2px;
 	border-color:					@ac;
     border-radius:                  0px;
-	width:							450px;
+	width:							300px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -36,10 +36,19 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						10px;
+    padding:                        10px 10px 10px 0px;
 	background-color: 				@al;
 	text-color: 					@ac;
 	font:							"Iosevka Nerd Font 10";
+}
+
+textbox-prompt-colon {
+	padding: 						10px 15px 10px 15px;
+	font:							"Iosevka Nerd Font 10";
+	background-color: 				@al;
+	text-color: 					@ac;
+	expand: false;
+	str: "";
 }
 
 entry {
@@ -55,7 +64,7 @@ entry {
 }
 
 inputbar {
-	children: 						[ prompt, entry ];
+	children: 						[ textbox-prompt-colon, prompt ];
     background-color:               @al;
     text-color:                     @fg;
     expand:                         false;
@@ -91,7 +100,7 @@ element {
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0px;
-    padding:                        8px;
+    padding:                        8px 8px 8px -16px;
 }
 
 element-icon {
