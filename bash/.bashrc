@@ -14,12 +14,19 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+    dbus-run-session sway
+fi
+
 
 # Put your fun stuff here.
 [ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" >/dev/null
 
+complete -cf doas
+source /usr/share/atuin/shell-init/bash
 alias i3conf='vim ~/dotfiles/i3/.config/i3/config'
-alias ls='exa -al --color=always --group-directories-first'
+alias swayconf='vim ~/dotfiles/sway/.config/sway/config'
+#alias ls='exa -al --color=always --group-directories-first'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias i3conf='vim ~/dotfiles/i3/.config/i3/config'

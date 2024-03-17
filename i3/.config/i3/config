@@ -28,12 +28,12 @@ font pango:monospace 8
 exec --no-startup-id compton -b --config $HOME/.config/picom/picom.conf
 exec --no-startup-id feh --bg-scale /home/jonathan/Pictures/Wallpapers/IMG_8246.JPG
 #/home/jonathan/Pictures/968860.jpg
-exec --no-startup-id xautolock -locker "/home/jonathan/dotfiles/i3lock/rickandmorty.sh" -time 10 -detectsleep -notify 10
+#exec --no-startup-id xautolock -locker "/home/jonathan/dotfiles/i3lock/rickandmorty.sh" -time 10 -detectsleep -notify 10
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-exec_always --no-start-up-id ~/.i3/polybar/launch.sh &
+#exec --no-startup-id nm-applet
+exec_always --no-start-up-id ~/.config/polybar/launch.sh &
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -53,6 +53,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec xterm
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
