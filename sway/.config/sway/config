@@ -19,12 +19,13 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu bemenu-run | xargs swaymsg exec --
+#set $menu bemenu-run | xargs swaymsg exec --
+set $menu wofi --show run | xarg swaymsg exec --
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/jonathan/Pictures/Wallpapers/IMG_8246.JPG fill
 #
 # Example configuration:
 #

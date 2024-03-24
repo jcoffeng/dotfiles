@@ -23,16 +23,23 @@ fi
 [ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" >/dev/null
 
 complete -cf doas
-source /usr/share/atuin/shell-init/bash
+#source /usr/share/atuin/shell-init/bash
 alias i3conf='vim ~/dotfiles/i3/.config/i3/config'
 alias swayconf='vim ~/dotfiles/sway/.config/sway/config'
 #alias ls='exa -al --color=always --group-directories-first'
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
-alias i3conf='vim ~/dotfiles/i3/.config/i3/config'
+SESSIONTYPE="$(loginctl show-session $(loginctl|grep $(whoami) |awk '{print $1}') -p Type)"
+if [[  $SESSIONTYPE = 'Type=Wayland' ]] 
+then
+    alias pbcopy = 'wl-copy'
+    alias pbpaste = 'wl-paste'
+else
+    alias pbcopy='xsel --clipboard --input'
+    alias pbpaste='xsel --clipboard --output'
+fi
+
 export HISTCONTROL=erasedups
 export HISTIGNORE="history:ls:pwd:"
-export HISTSIZE=10000
+export HISTSIZE=100000
 export HISTTIMEFORMAT='%F, %T'
 export PATH="/home/jonathan/.cargo/bin:/home/jonathan/.local/bin:/home/jonathan/repo/v/:$PATH"
 export MANPATH="/home/jonathan/.local/share/man:$MANPATH"
