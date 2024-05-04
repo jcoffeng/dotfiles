@@ -31,6 +31,7 @@ if [[  $SESSIONTYPE = 'Type=Wayland' ]]
 then
     alias pbcopy = 'wl-copy'
     alias pbpaste = 'wl-paste'
+    export MOZ_ENABLE_WAYLAND=1
 else
     alias pbcopy='xsel --clipboard --input'
     alias pbpaste='xsel --clipboard --output'
@@ -42,4 +43,13 @@ export HISTSIZE=100000
 export HISTTIMEFORMAT='%F, %T'
 export PATH="/home/jonathan/.cargo/bin:/home/jonathan/.local/bin:/home/jonathan/repo/v/:$PATH"
 export PATH="/home/jonathan/.cargo/bin:/home/jonathan/.local/bin:/home/jonathan/repo/v/:$PATH"
+# add Flatpak apps to PATH
+if [ -d "/var/lib/flatpak/exports/bin" ]; then
+    PATH="/var/lib/flatpak/exports/bin:$PATH"
+fi
 
+if [ -d "$HOME/.local/share/flatpak/exports/bin" ]; then
+     PATH="$HOME/.local/share/flatpak/exports/bin:$PATH"
+fi
+
+export PATH
